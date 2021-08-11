@@ -25,13 +25,14 @@ export default class index extends Component {
 
 
         try {
-            //https://api.github.com/search/users?q=${keyword}
+            //
+            //http://localhost:3000/api1/search/users?q=${keyword}
 
             //发送网络请求前通知app更新状态
             newState({ isLoading: true, isFirstSearch: false })
 
             //发送网络请求
-            const response = await axios.get(`http://localhost:3000/api1/search/users?q=${keyword}`)
+            const response = await axios.get(`https://api.github.com/search/users?q=${keyword}`)
 
             //请求成功后通知app更新状态
             newState({ users: response.data.items, isLoading: false });
