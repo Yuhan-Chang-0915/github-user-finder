@@ -1,0 +1,31 @@
+/* .album {
+    min-height: 50rem; 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f7f7f7; 
+  } */
+  
+  .eachCard {
+    float: left;
+    width: 33.333%;
+    padding: .60rem;
+    margin-bottom: 2rem;
+    border: 3px solid #efefef;
+    text-align: center;
+    background-color:#ede7e3;
+  }
+  
+  .card > img {
+    margin-bottom: .75rem;
+    border-radius: 200px;
+  }
+  
+  .card-text {
+    font-size: 100%;
+    
+  }
+
+  .text{
+    text-align: center;
+  }
+
